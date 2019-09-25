@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider_demo/Screens.dart';
-import 'package:provider_demo/demo_change_notifier_provider.dart';
+import 'package:provider_demo/demo_multi_provider.dart';
+import 'package:provider_demo/demo_value_listenable_provider.dart';
+import 'demo_future_provider.dart';
+import 'demo_proxy_provider.dart';
+import 'demo_stream_provider.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,7 +28,8 @@ class MyAppState extends State<MyApp> {
           title: Text("Demo Provider"),
         ),
         //body: BasicProvider(),
-        body: DemoChangeNotifierProvider(),
+        //body: DemoChangeNotifierProvider(),
+        body: DemoStreamProvider(),
       ),
     );
   }
